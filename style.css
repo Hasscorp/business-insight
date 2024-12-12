@@ -1,0 +1,116 @@
+/* External CSS for Business Insights */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #241f1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: #131217;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.text-content {
+  color: white;
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.text-content h1 {
+  font-size: 2rem;
+}
+
+.text-content h1 span {
+  color: #a97df1;
+}
+
+.text-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #b5b5b5;
+}
+
+.stats {
+  display: flex;
+  gap: 2rem;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat h2 {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.stat p {
+  font-size: 0.9rem;
+  color: #b5b5b5;
+}
+
+.image-content {
+  flex: 1;
+  background: url("https://via.placeholder.com/600x400") center/cover no-repeat;
+  position: relative;
+  filter: brightness(0.7) hue-rotate(240deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .image-content {
+    height: 300px;
+    flex: none;
+  }
+
+  .text-content {
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.image-content {
+  flex: 1;
+  ackground: url("https://via.placeholder.com/600x400") center/cover no-repeat;
+  position: relative;
+  filter: brightness(0.7) hue-rotate(240deg);
+}
+
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
