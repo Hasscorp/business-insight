@@ -1,5 +1,4 @@
-/* External CSS for Business Insights */
-
+/* General Styles */
 * {
   margin: 0;
   padding: 0;
@@ -71,7 +70,6 @@ body {
 
 .image-content {
   flex: 1;
-  background: url("https://via.placeholder.com/600x400") center/cover no-repeat;
   position: relative;
   filter: brightness(0.7) hue-rotate(240deg);
 }
@@ -100,17 +98,24 @@ body {
   }
 }
 
-.image-content {
-  flex: 1;
-  ackground: url("https://via.placeholder.com/600x400") center/cover no-repeat;
-  position: relative;
-  filter: brightness(0.7) hue-rotate(240deg);
-}
+@media (max-width: 480px) {
+  .text-content h1 {
+    font-size: 1.5rem;
+  }
 
-.image-content {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+  .text-content p {
+    font-size: 0.9rem;
+  }
+
+  .stat h2 {
+    font-size: 1.25rem;
+  }
+
+  .stat p {
+    font-size: 0.8rem;
+  }
+
+  .image-content {
+    height: 250px;
+  }
 }
